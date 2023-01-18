@@ -1,0 +1,90 @@
+:root {
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-secondary: 'Playfair Display', serif;
+    --ff-body: var(--font-family-primary);
+    --ff-accent: var(--font-family-secondary);
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --fs-300: 1.3rem;
+    /*? 13px */
+    --fs-400: 1.4rem;
+    /*? 14px */
+    --fs-500: 1.5rem;
+    /*? 15px */
+    --fs-600: 1.6rem;
+    /*? 16px */
+    --fs-650: 1.8rem;
+    /*? 18px */
+    --fs-700: 3.0rem;
+    /*? 30px */
+    --fs-800: 4.0rem;
+    /*? 40px */
+    --fs-900: 5.6rem;
+    /*? 56px */
+
+    --fs-body: var(--fs-650);
+    --fs-primary-heading: var(--fs-800);
+    --fs-secondary-heading: var(--fs-700);
+    --fs-nav: var(--fs-600);
+    --fs-button: var(--fs-600);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--ff-body);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    gap: 5.0em;
+    list-style-type: none;
+}
+
+nav a {
+    color: black;
+    font-size: var(--fs-nav);
+    text-decoration: none;
+    text-transform: uppercase;
+}
