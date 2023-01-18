@@ -87,4 +87,14 @@ nav a {
     font-size: var(--fs-nav);
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+}
+
+nav a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -2px;
 }
