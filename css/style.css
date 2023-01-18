@@ -8,6 +8,7 @@
     --ff-body: var(--font-family-primary);
     --ff-accent: var(--font-family-secondary);
 
+    --fw-light: 200;
     --fw-regular: 400;
     --fw-semi-bold: 500;
     --fw-bold: 700;
@@ -184,4 +185,37 @@ h1 {
 
 .svg-arrow {
     width: 20px;
+}
+
+.news-card {
+    display: flex;
+    gap: 3em;
+    padding: 3.5em;
+    border: 2px solid black;
+    border-radius: .8em;
+    position: relative;
+}
+
+.news-card:before {
+    position: absolute;
+    content: "";
+    background: url(../images/confetti.svg);
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+}
+
+.employees {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: var(--fw-light);
+    line-height: 100%;
+}
+
+.details {
+    font-size: 1.4rem;
+    margin: 0;
+    max-width: 39ch;
 }
