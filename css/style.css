@@ -126,6 +126,16 @@ nav a.active:before {
     bottom: -2px;
 }
 
+nav a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid #ABABAB;
+    bottom: -2px;
+    transition: width .3s;
+}
+
 /* Hero section */
 main {
     display: flex;
@@ -165,13 +175,13 @@ h1 {
 
 .primary-cta {
     padding: 1em 2em;
-    /* margin: 4.8em 0 3.0em 0; */
     font-size: var(--fs-button);
     font-weight: var(--fw-bold);
     color: black;
-    background-color: var(--clr-button-primary);
+    background: var(--clr-button-primary);
     text-decoration: none;
     border-radius: 0.9em;
+    transition: background .4s;
 }
 
 .secondary-cta {
@@ -185,6 +195,7 @@ h1 {
 
 .svg-arrow {
     width: 20px;
+    transition: transform .4s;
 }
 
 .news-card {
@@ -288,4 +299,22 @@ h1 {
 
 .product-price {
     font-size: var(--fs-650);
+}
+
+/* Microinteraction */
+
+nav ul li a:hover::before {
+    width: 35%;
+}
+
+.primary-cta:hover {
+    background: var(--clr-button-secondary);
+}
+
+.secondary-cta:hover {
+    text-decoration: underline;
+}
+
+.secondary-cta:hover svg {
+    transform: translateX(10px);
 }
