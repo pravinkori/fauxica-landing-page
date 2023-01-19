@@ -248,6 +248,7 @@ h1 {
     padding: 1.6em;
     border-radius: .8em;
     background-size: 150%;
+    transition: background-size 800ms;
 }
 
 .card1 {
@@ -283,6 +284,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: transform 800ms;
 }
 
 .card-details a {
@@ -317,4 +319,13 @@ nav ul li a:hover::before {
 
 .secondary-cta:hover svg {
     transform: translateX(10px);
+}
+
+.product-card:hover {
+    background-size: 160%;
+
+}
+
+.product-card:hover .card-details {
+    transform: translateY(-15px);
 }
